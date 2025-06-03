@@ -1,40 +1,38 @@
 const projects = [
-
   {
     title: "Weather App",
     description: "React app using OpenWeatherMap API",
-    image: "public/images/weather-App.jpg",
+    image: "/nikita-portfolio/images/weather-App.JPG",
   },
   {
     title: "Card Making Project",
     description: "A creative project on card making.",
-    image: "/images/Card-making.JPG",
+    image: "/nikita-portfolio/images/Card-making.JPG",
   },
-  
   {
     title: "Serenity Spa Website",
     description: "A responsive spa website with a booking feature.",
-    image: "public/images/Spa-project.jpg",
+    image: "/nikita-portfolio/images/Spa-project.JPG",
   },
   {
     title: "Typing Game",
     description: "Fast-paced typing game built in React with scoring system.",
-    image: "public/images/typing-game.jpg",
+    image: "/nikita-portfolio/images/typing-game.JPG",
   },
-    {
+  {
     title: "Express and MongoDB Project",
     description: "Backend project using Express and MongoDB.",
-    image: "public/images/Express-and-mongodb.JPG", // use the renamed filename here
+    image: "/nikita-portfolio/images/Express-and-MongoDB.JPG",
   },
   {
     title: "Frontend Project 1",
     description: "Some description for frontend-1.",
-    image: "/images/frontend-1.JPG",
+    image: "/nikita-portfolio/images/frontend-1.JPG",
   },
   {
     title: "Book Gallery",
     description: "A gallery website to showcase books.",
-    image: "/images/Book-gallery.JPG",
+    image: "/nikita-portfolio/images/Book-gallery.JPG",
   },
 ];
 
