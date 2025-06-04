@@ -17,13 +17,13 @@ const Resume = () => (
     </ul>
     <h3>Education</h3>
     <ul>
-      <li>Backend Developer Program – Sundsgårdens Folkhögskola ( June 2025)</li>
-      <li>Frontend Developer Program – Sundsgårdens Folkhögskola ( January 2025)</li>
-      <li>LL.M. in Law – Bharati Vidyapeeth University, Pune (2012)</li>
-      <li>LL.B. in Law – Bharati Vidyapeeth University, Pune (2010)</li>
+      <li>Backend Developer Program – Sundsgårdens Folkhögskola ( January2025 to June 2025)</li>
+      <li>Frontend Developer Program – Sundsgårdens Folkhögskola ( August 2024 to January 2025)</li>
+      <li>LL.M. in Law – Bharati Vidyapeeth University, Pune (2010 to 2012)</li>
+      <li>LL.B. in Law – Bharati Vidyapeeth University, Pune (2007 to 2010)</li>
       <li>B.A. in Arts – Adarsh College, Mumbai (2007)</li>
     </ul>
-    {/* Add certifications, languages, personal attributes similarly */}
+    
   </section>
 );
 

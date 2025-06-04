@@ -1,34 +1,36 @@
-import React, { useState } from 'react';
-
-const Contact = () => {
-  const [formData, setFormData] = useState({ name: '', email: '', message: '' });
-  const [status, setStatus] = useState('');
-
-  const handleChange = e => setFormData({ ...formData, [e.target.name]: e.target.value });
-
-  const handleSubmit = async e => {
-    e.preventDefault();
-    const res = await fetch('http://localhost:5000/api/email', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(formData),
-    });
-    const data = await res.json();
-    setStatus(data.message);
-  };
-
-  return (
-    <section id="contact">
-      <h2>Contact Me</h2>
-      <form onSubmit={handleSubmit}>
-        <input name="name" placeholder="Name" onChange={handleChange} required />
-        <input type="email" name="email" placeholder="Email" onChange={handleChange} required />
-        <textarea name="message" placeholder="Message" onChange={handleChange} required />
-        <button type="submit">Send</button>
-      </form>
-      <p>{status}</p>
-    </section>
-  );
-};
+const Contact = () => (
+  <section id="contact" style={{ padding: '3rem 1rem', backgroundColor: '#f9f9f9' }}>
+    <div style={{ maxWidth: '600px', margin: '0 auto', textAlign: 'center' }}>
+      <h2 style={{ fontSize: '2rem', marginBottom: '1rem' }}>Contact Me</h2>
+      <p style={{ fontSize: '1.1rem', marginBottom: '1rem' }}>
+        You can reach me directly at:
+      </p>
+      <a
+        href=" nikitanandumore@gmail.com"
+        style={{
+          fontSize: '1.2rem',
+          color: '#007acc',
+          textDecoration: 'none',
+          fontWeight: 'bold',
+          border: '2px solid #007acc',
+          padding: '0.5rem 1rem',
+          borderRadius: '8px',
+          transition: 'all 0.3s ease',
+          display: 'inline-block',
+        }}
+        onMouseOver={(e) => {
+          e.target.style.backgroundColor = '#007acc';
+          e.target.style.color = '#fff';
+        }}
+        onMouseOut={(e) => {
+          e.target.style.backgroundColor = '';
+          e.target.style.color = '#007acc';
+        }}
+      >
+        nikitanandumore@gmail.com
+      </a>
+    </div>
+  </section>
+);
 
 export default Contact;
